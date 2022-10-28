@@ -1,11 +1,7 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
-
-// Link
-const uri = `mongodb+srv://iyan:${process.env.PASSWORD}@mongodb.xiwgycg.mongodb.net/?retryWrites=true&w=majority`;
-
 // Koneksi
-mongoose.connect(uri, {
+mongoose.connect(process.env.DB_URI, {
      useNewUrlParser: true,
      useUnifiedTopology: true,
 });
