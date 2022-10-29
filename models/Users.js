@@ -9,5 +9,4 @@ const userSchema = new Schema({
 });
 
 const Users = db.model("user", userSchema);
-
 module.exports = Users;
