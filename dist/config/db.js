@@ -1,0 +1,1 @@
+const mongoose=require("mongoose"),db=(require("dotenv").config(),mongoose.connect(process.env.DB_URI,{useNewUrlParser:!0,useUnifiedTopology:!0}),mongoose.connection);db.on("error",()=>console.log("gagal terhubung ke database")),db.once("open",()=>console.log("Berhasil terhubung ke database")),module.exports=db;

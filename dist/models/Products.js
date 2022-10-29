@@ -1,0 +1,1 @@
+const mongoose=require("mongoose"),Schema=mongoose["Schema"],db=require("../config/db"),productSchema=new Schema({product_name:String,country:String,price:String}),Product=db.model("product",productSchema);module.exports=Product;

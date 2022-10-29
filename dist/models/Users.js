@@ -1,0 +1,1 @@
+const mongoose=require("mongoose"),Schema=mongoose["Schema"],db=require("../config/db"),userSchema=new Schema({nama:String,email:String,umur:String}),Users=db.model("user",userSchema);module.exports=Users;

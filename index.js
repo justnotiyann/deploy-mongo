@@ -7,9 +7,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
-const routerSignUp = require("./routes/index");
-const routerAdmin = require("./routes/login");
-const routerProduct = require("./routes/ProductRoutes");
+const routerSignUp = require("./dist/routes/index");
+const routerAdmin = require("./dist/routes/login");
+const routerProduct = require("./dist/routes/ProductRoutes");
 app.use("/", routerSignUp);
 app.use("/admin", routerAdmin);
 app.use("/product", routerProduct);

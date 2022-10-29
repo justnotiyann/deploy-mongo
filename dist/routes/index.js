@@ -1,0 +1,1 @@
+const router=require("express").Router(),Users=require("../models/Users");router.get("/",async(e,a)=>{a.send("oe")}),router.post("/signup",async(e,a)=>{var{nama:e,email:r,umur:s}=e.body,e=new Users({nama:e,email:r,umur:s});try{var t=await e.save();t||a.json({msg:"Gagal add data"}),a.json({msg:"Berhasil menambahkan data",result:t})}catch(e){}}),module.exports=router;
