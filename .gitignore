@@ -1,6 +1,5 @@
-src/
 .editorconfig
-
+src/
 # Logs
 logs
 *.log
